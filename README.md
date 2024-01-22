@@ -14,9 +14,9 @@ This is the GitHub repository of the [OGC Moving Feature Standard Working Group 
 - [OGC Moving Features JSON Encoding 1.0 (Trajectory)](https://schemas.opengis.net/movingfeatures/1.0/MF-JSON_Trajectory.schema.json)
 
 ## Draft Standards (on-going)
-- [OGC API - Moving Features — Part 1: Core (HTML)](https://opengeospatial.github.io/ogcna-auto-review/22-003.html)
-- [OGC API - Moving Features - Part 1: Core (PDF)](https://opengeospatial.github.io/ogcna-auto-review/22-003.pdf)
-- [OGC API - Moving Features - Part 1: Core (OpenAPI)](https://opengeospatial.github.io/ogcapi-movingfeatures/openapi/openapi-movingfeatures-1.html)
+- [OGC API — Moving Features — Part 1: Core (HTML)](https://opengeospatial.github.io/ogcna-auto-review/22-003.html)
+- [OGC API — Moving Features — Part 1: Core (PDF)](https://opengeospatial.github.io/ogcna-auto-review/22-003.pdf)
+- [OGC API — Moving Features — Part 1: Core (OpenAPI)](https://opengeospatial.github.io/ogcapi-movingfeatures/openapi/openapi-movingfeatures-1.html)
 
 ## Best practices
 - [OGC Moving Features Encoding Extension: netCDF (1.0, OGC 16-114r3)](https://docs.ogc.org/bp/16-114r3/16-114r3.html)
@@ -34,7 +34,7 @@ This is the GitHub repository of the [OGC Moving Feature Standard Working Group 
 ## GitHub Repositories
 - [OGC Moving Features](https://github.com/opengeospatial/movingfeatures)
 - [OGC Moving Features JSON Encoding](https://github.com/opengeospatial/mf-json)
-- [OGC API - Moving Features](https://github.com/opengeospatial/ogcapi-movingfeatures)
+- [OGC API — Moving Features](https://github.com/opengeospatial/ogcapi-movingfeatures)
 
 ## Open-Sources
 ### OGC Moving Features JSON Encoding (MF-JSON) 
@@ -43,6 +43,6 @@ This is the GitHub repository of the [OGC Moving Feature Standard Working Group 
 - Data visualization: [STINUUM (Spatio-Temporal continua on Cesium)](https://github.com/aistairc/mf-cesium)
 - Data provider: [Brussels Mobility Twin API](https://mobilitytwin.brussels/doc/)
 
-### OGC API - Moving Features
+### OGC API — Moving Features
 - API server: [MF-API Server](https://github.com/aistairc/mf-api)
 - Data visualization client: [STINUUM (Spatio-Temporal continua on Cesium)](https://github.com/aistairc/mf-cesium/tree/mf-cesium_api)
