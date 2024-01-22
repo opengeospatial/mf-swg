@@ -23,7 +23,7 @@ This workshop will get you started with OGC API – MF and its implementation in
 - [15 mins] Break
 - [65 mins] How to implement OGC API – MF with pygeoapi and MobilityDB? (AppTech)
   - [5 mins] A brief explanation of pygeoapi (overall architecture, etc.) and install MF-API Server (using Docker)
-  - [10 mins] A brief explanation of MobilityDB and the function (and structure) used to handle temporal geometry and properRes.
+  - [10 mins] A brief explanation of MobilityDB and the function (and structure) used to handle temporal geometry and properties.
   - [20 mins] Describe how you extended pygeoapi to support OGC API – MF (libraries to use OpenAPI and MobilityDB (pyMEOS, python-mobilitydb, etc.) and extension structure, etc.)
   - [30 mins] Verify that each API works properly using Swagger.
 - [15 mins] Break
@@ -40,4 +40,4 @@ The below open sources will be used in this workshop:
 
 The installation of each program will use a Docker file.
 Lastly, you can check many helpful information about OGC API – MF here:
-https://github.com/opengeospaRal/ogcapi-movingfeatures
+https://github.com/opengeospatial/ogcapi-movingfeatures
