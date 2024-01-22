@@ -9,17 +9,17 @@ We will be working primarily on the [OGC API - Moving Feature](https://ogcapi.og
 This page summarizes the goal, schedule, and outcomes of the activities related to the code sprint. 
 
 
-## Topics
-In this code sprint, OGC Moving Features SWG will cover the following topics:
+## Tasks
+In this code sprint, OGC Moving Features SWG will cover the following tasks:
 
-Documentation
-- [ ] Validation against the designed [Core APIs](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#toc13)
-- [ ] Validation of the designed APIs against the [Abstract Test Suite (ATS)](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#toc36)
+*Documentation*
+- Validation against the designed [Core APIs](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#toc13)
+- Validation of the designed APIs against the [Abstract Test Suite (ATS)](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#toc36)
 
-Development
-- [ ] Further development of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
-- [ ] Fixes and refactorings to bring the MF-API Server in line with the latest [pygeoapi](https://github.com/geopython/pygeoapi).
-- [ ] Add OGC API - Moving Features as one of [pygeoapi's providers](https://docs.pygeoapi.io/en/stable/data-publishing/index.html#providers-overview)
+*Development*
+- Further implementation of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
+- Refactoring the MF-API server to the latest [pygeoapi](https://github.com/geopython/pygeoapi).
+- Add OGC API - Moving Features as one of [pygeoapi's providers](https://docs.pygeoapi.io/en/stable/data-publishing/index.html#providers-overview)
 
 And AOB!
 
@@ -49,25 +49,25 @@ This is the schedule for the main track.
 |            | 09:00 - 10:00 | Welcome session                         | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
 |            | 10:00 - 12:30 | Introduce OGC API - Moving Features (and Practical Work)    | On-site                                 |
 |            | 12:30 - 13:30 | Lunch                                   | 🍜                                                          |
-|            | 13:30 - 17:00 | Practical Work                          | On-site                                                     |
+|            | 13:30 - 17:00 | Additional implementation of APIs       | On-site                                                     |
 |            | 17:00 - 18:00 | Early dinner                            | 🍜                                                          |
-|            | 18:00 - 20:00 | Practical work                          | On-site                                                     |
+|            | 18:00 - 20:00 | Additional implementation of APIs       | On-site                                                     |
 |            | 20:00 - 21:00 | Daily Brief Back                        | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
 | 2024-02-27 |               | **Day #2**                              |                                                             |
-|            | 09:00 - 10:00 | Practical work                          | On-site                                                     |
+|            | 09:00 - 10:00 | Additional implementation of APIs       | On-site                                                     |
 |            | 10:00 - 10:30 | Stand-up                                | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
-|            | 10:30 - 12:30 | Practical work                          | On-site                                                     |
+|            | 10:30 - 12:30 | Additional implementation of APIs       | On-site                                                     |
 |            | 12:30 - 13:30 | Lunch                                   | 🍜                                                          |
-|            | 13:30 - 17:00 | Practical Work                          | On-site                                                     |
+|            | 13:30 - 17:00 | Refactoring the MF-API server           | On-site                                                     |
 |            | 17:00 - 18:00 | Early dinner                            | 🍜                                                          |
-|            | 18:00 - 20:00 | Practical work                          | On-site                                                     |
+|            | 18:00 - 20:00 | Refactoring the MF-API server           | On-site                                                     |
 |            | 20:00 - 21:00 | Daily Brief Back                        | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
 | 2024-02-28 |               | **Day #3: Final Day**                   |                                                             |
-|            | 09:00 - 10:00 | Practical work                          | On-site                                                     |
+|            | 09:00 - 10:00 | Refactoring the MF-API server           | On-site                                                     |
 |            | 10:00 - 10:30 | Stand-up                                | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
-|            | 10:30 - 13:00 | Practical work                          | On-site                                                     |
+|            | 10:30 - 13:00 | Refactoring the MF-API server           | On-site                                                     |
 |            | 13:00 - 14:00 | Lunch                                   | 🍜                                                          |
-|            | 14:00 - 15:00 | Practical work                          | On-site                                                     |
+|            | 14:00 - 15:00 | Preparing Demo                          | On-site                                                     |
 |            | 15:00 - 17:00 | Demos & Wrap-up                         | V::📣 [GotoMeet](http://www.gotomeeting.com/join/570724997) |
 
 ## Summary
