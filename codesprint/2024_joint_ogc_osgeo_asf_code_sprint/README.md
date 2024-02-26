@@ -47,7 +47,7 @@ This is the schedule for the main track.
 |            | 14:00 - 15:00 | Pre-event webinar                       | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
 | 2024-02-26 |               | **Day #1: Kick-Off**                    |                                                             |
 |            | 09:00 - 10:00 | Welcome session                         | V:🏛 [#Main Stage](https://discord.gg/3pezeR98Ks)           |
-|            | 10:00 - 12:30 | Introduce OGC API - Moving Features (and Practical Work)    | On-site                                 |
+|            | 10:00 - 12:30 | Introduce OGC API - Moving Features     | On-site                                                     |
 |            | 12:30 - 13:30 | Lunch                                   | 🍜                                                          |
 |            | 13:30 - 17:00 | Additional implementation of APIs       | On-site                                                     |
 |            | 17:00 - 18:00 | Early dinner                            | 🍜                                                          |
@@ -70,5 +70,21 @@ This is the schedule for the main track.
 |            | 14:00 - 15:00 | Preparing Demo                          | On-site                                                     |
 |            | 15:00 - 17:00 | Demos & Wrap-up                         | V::📣 [GotoMeet](http://www.gotomeeting.com/join/570724997) |
 
-## Summary
-Daily activity reports will be added here.
+## Project and Working Group Pitches
+
+[![Video](https://img.youtube.com/vi/bFOj7U44CpU/0.jpg)](https://www.youtube.com/embed/bFOj7U44CpU?si=FJfYgJOxcNpYeI9u)
+
+## Daily Summary Report
+### 24-02-26
+- (ongoing) Further implementation of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
+  - [The TemporalGeometry Query Resources](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#_3dd02e21-5ed6-4ad3-bbb4-098f18e0a04d) need to be implemented.
+  - We try to implement three functions (Distance, Velocity, and Acceleration) using MobilityDB functions
+  - [x] Distance: Using [cumulativeLength](https://mobilitydb.github.io/MobilityDB/master/ch08s04.html) function
+  - [x] Velocity: Using [speed](https://mobilitydb.github.io/MobilityDB/master/ch08s04.html) function
+  - [ ] Acceleration: NOT YET IMPLEMENTED 
+  - Extend OpenAPI file (*.yml) for the [queryable APIs](https://opengeospatial.github.io/ogcapi-movingfeatures/openapi/openapi-movingfeatures-1.html#tag/TemporalGeometryQuery)
+  - Result: [Commit](https://github.com/aistairc/mf-api/commit/357eb2c802ddf251d7b0e55df9d6486d179c3d8f)
+### 24-02-27
+TBD
+### 24-02-28
+TBD
