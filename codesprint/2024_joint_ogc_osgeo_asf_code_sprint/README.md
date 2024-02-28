@@ -76,7 +76,7 @@ This is the schedule for the main track.
 
 ## Daily Summary Report
 ### 24-02-26
-- (ongoing) Further implementation of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
+- (Ongoing) Further implementation of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
   - [The TemporalGeometry Query Resources](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#_3dd02e21-5ed6-4ad3-bbb4-098f18e0a04d) need to be implemented.
   - We try to implement three functions (Distance, Velocity, and Acceleration) using MobilityDB functions
   - [x] Distance: Using [cumulativeLength](https://mobilitydb.github.io/MobilityDB/master/ch08s04.html) function
@@ -85,6 +85,14 @@ This is the schedule for the main track.
   - Extend OpenAPI file (*.yml) for the [queryable APIs](https://opengeospatial.github.io/ogcapi-movingfeatures/openapi/openapi-movingfeatures-1.html#tag/TemporalGeometryQuery)
   - Result: [Commit](https://github.com/aistairc/mf-api/commit/357eb2c802ddf251d7b0e55df9d6486d179c3d8f)
 ### 24-02-27
-TBD
+- (Done) Further implementation of APIs not supported by [MF-API Server](https://github.com/aistairc/mf-api) (queryable API part)
+  - [The TemporalGeometry Query Resources](https://opengeospatial.github.io/ogcna-auto-review/22-003.html#_3dd02e21-5ed6-4ad3-bbb4-098f18e0a04d) need to be implemented.
+  - [x] Acceleration: Using the speed function result, we calculated the acceleration value of each time interval.
+  - Result: [Pull request](https://github.com/aistairc/mf-api/pull/9)
+- (Failed) Update MobilityDB (and PyMEOS) version to 1.1 (Release Candidate)
+  - We try to update the current used MobilityDB version (1.0) to the latest version (1.1), but there is a conflict of the Shapely version (pygeoapi < 2.0, PyMEOS >= 2.0)
+- (Postponed) Integrate MF-API Server with the latest pygeoapi
+  - The pygeoapi team is preparing the project re-structure (ref. [Issue #1405, split api.py](https://github.com/geopython/pygeoapi/pull/1405) and related [Pull request #1556](https://github.com/geopython/pygeoapi/pull/1556))
+  - Therefore, we wait until the restructuring of pygeoapi is complete before integrating the MF-API server into pygeoapi. 
 ### 24-02-28
-TBD
+- (Done) Preparing Demo with [STINUUM](https://github.com/aistairc/mf-cesium/tree/mf-cesium_api) (or Swagger)
