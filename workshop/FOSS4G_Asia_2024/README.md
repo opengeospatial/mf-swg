@@ -847,8 +847,8 @@ subTemporalValue : true
 
 ---
 ## References
-MF-API Server based on pygeoapi
-https://github.com/aistairc/mf-api
+pygeoapi supporting OGC API – Moving Features
+https://github.com/aistairc/pygeoapi-mf-api
 
 OGC API – MovingFeatures official GitHub repository
 https://github.com/opengeospatial/ogcapi-movingfeatures
