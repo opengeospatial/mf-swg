@@ -14,16 +14,22 @@ Execute the following three commands in order at the command prompt
 
 Step1
 ```bash
-git clone -b 추후기입
-cd 추후기입
+git clone https://github.com/aistairc/pygeoapi-mf-api
+cd pygeoapi-mf-api
 ```
 
 Step2
 ```bash
+# For window / ubuntu
 docker compose build
 docker-compose up
 ```
-
+> [!NOTE] 
+> * If an issue occurs during the docker build process on a Mac
+> ```bash
+> DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose build
+> DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up
+> ```
 Step3
 ```bash
 docker exec pygeoapi-ogi-mf-api-mf-api-1 pytest ./tests/test_postgresql_mobilitydb.py
@@ -438,9 +444,9 @@ Request body(application/json) :
   "temporalProperties": [
     {
       "datetimes": [
-        "2011-07-14T22:00:00Z",
-        "2011-07-14T22:30:00Z",
-        "2011-07-14T23:00:00Z"
+        "2012-07-14T22:00:00Z",
+        "2012-07-14T22:30:00Z",
+        "2012-07-14T23:00:00Z"
       ],
       "length": {
         "type": "Measure",
@@ -616,8 +622,7 @@ collectionId : ID of the response at the time of **MovingFeatureCollection**
 
 mFeatureId : ID of the response at the time of **MovingFeatures**
 
-#수정
-leaf : ```2011-08-14T22:30:00Z```
+leaf : ```2012-07-14T22:30:00Z```
 
 bbox : Empty
 
@@ -636,7 +641,7 @@ leaf : Empty
 
 bbox : Empty
 
-datetime : ```2011-08-14T22:15:00Z/2011-08-14T22:55:00Z```
+datetime : ```2012-07-14T22:15:00Z/2012-07-14T22:55:00Z```
 
 limit : 10
 
@@ -726,14 +731,14 @@ Request body(application/json)  :
 ---
 
 ### No.13
-#### **[GET]** TemporalProperties (/collections/{collectionId}/items/{mFeatureId}/tproperties)
+#### **[GET]** TemporalProperty (/collections/{collectionId}/items/{mFeatureId}/tproperties)
 collectionId : ID of the response at the time of **MovingFeatureCollection**
 
 mFeatureId : ID of the response at the time of **MovingFeatures**
 
 leaf : Empty
 
-datetime : ```2011-08-14T22:15:00Z/2011-08-14T22:55:00Z```
+datetime : ```2012-07-14T22:15:00Z/2012-07-14T22:55:00Z```
 
 limit : 10
 
@@ -752,7 +757,7 @@ tPropertyName : length
 
 leaf : Empty
 
-datetime :  ```2010-01-01T00:00:00Z/..```
+datetime :  ```2012-07-14T22:15:00Z/2012-07-14T22:55:00Z```
 
 subTemporalValue : true
 
@@ -804,13 +809,11 @@ mFeatureId : ID of the response at the time of **MovingFeatures**
 
 tGeometryId : ID of the response at the time of **TemporalGeometry**
 
-tPropertyName : length
+datetime : ```2012-07-14T22:15:00Z/2012-07-14T22:55:00Z```
 
-datetime : 
+leaf : Empty
 
-leaf :
-
-subTemporalValue :
+subTemporalValue : --
 
 ---
 ### No.18
@@ -821,13 +824,11 @@ mFeatureId : ID of the response at the time of **MovingFeatures**
 
 tGeometryId : ID of the response at the time of **TemporalGeometry**
 
-tPropertyName : length
+datetime : ```2010-01-01T00:00:00Z/..```
 
-datetime : 
+leaf : ```2012-07-14T22:15:00Z```
 
-leaf :
-
-subTemporalValue :
+subTemporalValue : --
 
 ---
 ### No.19
@@ -838,13 +839,11 @@ mFeatureId : ID of the response at the time of **MovingFeatures**
 
 tGeometryId : ID of the response at the time of **TemporalGeometry**
 
-tPropertyName : length
+datetime : ```2010-07-14T22:15:00Z/2012-07-14T22:55:00Z```
 
-datetime : 
+leaf : Empty
 
-leaf :
-
-subTemporalValue :
+subTemporalValue : true
 
 ---
 ## References
