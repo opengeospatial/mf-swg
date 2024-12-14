@@ -11,29 +11,14 @@ Each section describes the commands and sample data used.
 ---
 ## <5 mins> A brief explanation of pygeoapi (overall architecture, etc.) and install MF-API Server (using Docker)
 Execute the following three commands in order at the command prompt
-
-Step1
-```bash
-git clone https://github.com/aistairc/pygeoapi-mf-api
-cd pygeoapi-mf-api
-```
-
-Step2
-```bash
-# For window / ubuntu
-docker compose build
+1. Install
+```shell
+docker pull ghcr.io/taehoonk/pygeoapi-mf-api:latest 
+docker pull ghcr.io/taehoonk/pygeoapi-mf-api-mobilitydb:latest 
 docker-compose up
 ```
-> [!NOTE] 
-> * If an issue occurs during the docker build process on a Mac
-> ```bash
-> DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose build
-> DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up
-> ```
-Step3
-```bash
-docker exec pygeoapi-ogi-mf-api-mf-api-1 pytest ./tests/test_postgresql_mobilitydb.py
-```
+2. Connect to Webpage localhost:5050
+
 ---
 ## <10 mins> A brief explanation of MobilityDB and the functions (and structure) used to handle TemporalGeometry and properties.
 > [!NOTE] 
@@ -61,7 +46,7 @@ Request body(application/json)
 ---
 ### No.2
 #### **[GET]** MovingFeatureCollection (/collections/{collectionId})
-collectionID
+collectionID : The last part of `location` link when POST response
 > [!NOTE] 
 > * The last part of `location` link when POST response
 ![image](https://github.com/ogi-ts-shimizu/FOSS4G2023Workshop_How-to-implement-OGC-API/assets/120169253/934a7555-a796-4289-a7bf-a18d4c962204)
