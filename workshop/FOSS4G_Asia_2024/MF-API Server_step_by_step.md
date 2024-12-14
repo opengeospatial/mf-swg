@@ -1,5 +1,5 @@
 # FOSS4G2024Workshop_How-to-implement-OGC-API
-FOSS4G Asia 2024 Bangkok Half-day workshop >  OGC API – MF, an introduction with MF-API Server based on pygeoapi and MobilityDB > How to implement OGC API – MF with pygeoapi and MobilityDB?
+FOSS4G Asia 2024 Bangkok Half-day workshop >  An introduction with MF-API Server based on pygeoapi and MobilityDB > How to implement OGC API – MF with pygeoapi and MobilityDB?
 Each section describes the commands and sample data used.
 
 ## Recommended PC specifications
@@ -9,9 +9,10 @@ Each section describes the commands and sample data used.
 - [x] (optional) Database Viewer **DBeaver** (https://dbeaver.io/)
 
 ---
-## <5 mins> A brief explanation of pygeoapi (overall architecture, etc.) and install MF-API Server (using Docker)
+## <5 mins> A brief explanation of pygeoapi and install it (using Docker)
 Execute the following three commands in order at the command prompt
-1. Install
+1. Download the necessary files ('mf-api.config.yml' and 'docker-compose.yml' in this folder)
+2. Install pygeoapi and mobilitydb using Docker
 ```shell
 docker pull ghcr.io/taehoonk/pygeoapi-mf-api:latest 
 docker pull ghcr.io/taehoonk/pygeoapi-mf-api-mobilitydb:latest 
@@ -20,16 +21,16 @@ docker-compose up
 2. Connect to Webpage localhost:5050
 
 ---
-## <10 mins> A brief explanation of MobilityDB and the functions (and structure) used to handle TemporalGeometry and properties.
+## <10 mins> A brief explanation of MobilityDB and its functionality
 > [!NOTE] 
 > * There are no commands or data to use.
 ---
 
-## <20 mins> Describe how you extended pygeoapi to support OGC API – MF (libraries to use OpenAPI and MobilityDB (pyMEOS, python-mobilitydb, etc.) and extension structure, etc.)
+## <20 mins> Describe how to extend pygeoapi to support OGC API – MF (with MobilityDB) 
 > [!NOTE] 
 > * There are no commands or data to use.
 ---
-## <30 mins> Verify that each API works properly using Swagger
+## <30 mins> Verify each API works properly using Swagger
 ## MovingFeatureCollection
 ### No.1
 #### **[POST]** MovingFeatureCollection (/collections)
@@ -832,17 +833,17 @@ subTemporalValue : true
 
 ---
 ## References
-pygeoapi supporting OGC API – Moving Features
+pygeoapi for supporting OGC API – Moving Features
 https://github.com/aistairc/pygeoapi-mf-api
 
-OGC API – MovingFeatures official GitHub repository
+OGC API – Moving Features official GitHub repository
 https://github.com/opengeospatial/ogcapi-movingfeatures
 
-MobilityDB (and its Python driver, PyMEOS, and MEOS)
+MobilityDB 
 https://github.com/MobilityDB
 
-STINUUM（The installation of each program will use a Docker file.）
+STINUUM
 https://github.com/aistairc/mf-cesium
 
-OGC API – MF helpful information
+OGC API – Moving Features helpful information
 https://ogcapi.ogc.org/movingfeatures/
