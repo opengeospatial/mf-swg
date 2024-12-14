@@ -3,20 +3,19 @@
 This is the GitHub repository of the [OGC Moving Feature Standard Working Group (Moving Features SWG)](https://www.ogc.org/standard/movingfeatures/).
 
 ## Official Standard and Specifications
+- [OGC API — Moving Features — Part 1: Core (HTML)](https://docs.ogc.org/is/22-003r3/22-003r3.html)
+- [OGC API — Moving Features — Part 1: Core (OpenAPI)](https://developer.ogc.org/api/movingfeatures/index.html)
+- [OGC Moving Features Encoding Extension – JSON (1.0, OGC 19-045r3)](https://docs.ogc.org/is/19-045r3/19-045r3.html)
 - [OGC Moving Features Encoding Part I: XML Core (1.0.2, OGC 18-075)](https://docs.ogc.org/is/18-075/18-075.html)
 - [OGC Moving Features Access (1.0, OGC 16-120r3)](https://docs.ogc.org/is/16-120r3/16-120r3.html)
 - [OGC Moving Features Encoding Extension: Simple Comma Separated Values (CSV) (1.0, OGC 14-084r2)](https://docs.ogc.org/is/14-084r2/14-084r2.html)
-- [OGC Moving Features Encoding Extension – JSON (1.0, OGC 19-045r3)](https://docs.ogc.org/is/19-045r3/19-045r3.html)
+
 
 ## Official Schemas
 - [OGC Moving Features XML Encoding 1.0 XSD](https://schemas.opengis.net/movingfeatures/1.0/mf-xmlcore.xsd)
 - [OGC Moving Features JSON Encoding 1.0 (Prism)](https://schemas.opengis.net/movingfeatures/1.0/MF-JSON_Prism.schema.json)
 - [OGC Moving Features JSON Encoding 1.0 (Trajectory)](https://schemas.opengis.net/movingfeatures/1.0/MF-JSON_Trajectory.schema.json)
-
-## Draft Standards (on-going)
-- [OGC API — Moving Features — Part 1: Core (HTML)](https://opengeospatial.github.io/ogcna-auto-review/22-003.html)
-- [OGC API — Moving Features — Part 1: Core (PDF)](https://opengeospatial.github.io/ogcna-auto-review/22-003.pdf)
-- [OGC API — Moving Features — Part 1: Core (OpenAPI)](https://opengeospatial.github.io/ogcapi-movingfeatures/openapi/openapi-movingfeatures-1.html)
+- [OGC API — Moving Features](https://schemas.opengis.net/ogcapi/movingfeatures/)
 
 ## Best practices
 - [OGC Moving Features Encoding Extension: netCDF (1.0, OGC 16-114r3)](https://docs.ogc.org/bp/16-114r3/16-114r3.html)
@@ -44,5 +43,5 @@ This is the GitHub repository of the [OGC Moving Feature Standard Working Group 
 - Data provider: [Brussels Mobility Twin API](https://mobilitytwin.brussels/doc/)
 
 ### OGC API — Moving Features
-- API server: [MF-API Server](https://github.com/aistairc/mf-api)
+- API server: [MF-API Server](https://github.com/aistairc/pygeoapi-mf-api)
 - Data visualization client: [STINUUM (Spatio-Temporal continua on Cesium)](https://github.com/aistairc/mf-cesium/tree/mf-cesium_api)
