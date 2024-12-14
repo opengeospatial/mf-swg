@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+  mf-api:
+    container_name: pygeoapi-mf-api
+    image: ghcr.io/taehoonk/pygeoapi-mf-api
+    volumes:
+      - ./mf-api.config.yml:/pygeoapi/local.config.yml
+    ports:
+      - 5050:80
+
+  mobilitydb:
+    container_name: mobilitydb
+    ports:
+      - 25432:5432
+    environment:
+      - POSTGRES_DB=mobilitydb
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+    image: ghcr.io/taehoonk/pygeoapi-mf-api-mobilitydb
+    restart: on-failure
